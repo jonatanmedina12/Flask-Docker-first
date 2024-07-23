@@ -1,0 +1,10 @@
+delete:
+  summary: Delete an item by ID
+  parameters:
+    - name: item_id
+      in: path
+      type: integer
+      required: true
+  responses:
+    204:
+      description: Item deleted
