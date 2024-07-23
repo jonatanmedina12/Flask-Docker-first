@@ -1,0 +1,23 @@
+post:
+  summary: Create a new item
+  parameters:
+    - in: body
+      name: body
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+          description:
+            type: string
+  responses:
+    201:
+      description: Item created
+      schema:
+        properties:
+          id:
+            type: integer
+          name:
+            type: string
+          description:
+            type: string
